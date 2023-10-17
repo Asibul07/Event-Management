@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+/* Reset some default styles in browsers */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add some basic styling to the NavBar */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Add some spacing between the NavBar and the content */
+.content {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* Add some basic styling to the Footer */
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add some basic styling to the banner slider */
+.banner-slider {
+  height: 200px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* Add some basic styling to the services section */
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Add some basic styling to the login and registration pages */
+.auth-page {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.auth-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.auth-input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.auth-button {
+  padding: 10px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auth-button:hover {
+  background-color: #0056b3;
 }
